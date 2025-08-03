@@ -8,6 +8,11 @@
   padding: 0;
 }
 
+/* Ensure full height for body and html for flex to work */
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Bungee', sans-serif;
   background: linear-gradient(to bottom, #3a9bdc, #1c3f78, #1c3f78);
@@ -25,6 +30,8 @@ header {
   text-align: center;
   padding: 2rem 1rem 1.5rem;
   color: white;
+  position: relative; /* Keep stacking context for z-index */
+  z-index: 2;
 }
 
 header img {
@@ -38,12 +45,16 @@ header img {
   color: #f3f3f3;
 }
 
-/* Golden line below header */
+/* Golden line below header (full-width) */
 .header-separator {
   border: none;
   border-top: 3px solid #ffcc00;
-  margin: 0 auto 2rem;
-  max-width: 1200px;
+  width: 100vw;
+  margin: 0;
+  margin-bottom: 2rem;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2); /* force full width, even inside body padding */
+  z-index: 3; /* Above everything */
 }
 
 /* Layout */
@@ -57,21 +68,24 @@ header img {
   border-radius: 0;
   color: white;
   position: relative;
-  align-items: stretch; /* makes sidebar fill height */
+  align-items: stretch; /* sidebar fills height */
+  min-height: 0; /* reset if needed */
 }
 
 /* Sidebar */
 .sidebar {
   width: 220px;
   padding-right: 2rem;
-  border-right: 2px solid white; /* extend white line and make it bright */
+  border-right: 2px solid white;
   background-color: transparent;
   margin-left: -2rem;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: space-between; /* stretch full height */
+  min-height: 100%; /* ensures full height */
 }
 
+/* Sidebar links */
 .sidebar a {
   display: block;
   margin-bottom: 1rem;
@@ -148,4 +162,6 @@ footer {
   color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: auto;
+  position: relative; /* for stacking */
+  z-index: 2;
 }
