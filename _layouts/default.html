@@ -25,44 +25,44 @@
     <main>
       {{ content }}
     </main>
-
-        <!-- Panzoom library for zoom and pan -->
-    <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const elem = document.querySelector('.zoom-map');
-        if (elem) {
-          const panzoom = Panzoom(elem, {
-            contain: 'outside',
-            maxScale: 5,
-            minScale: 1,
-            step: 0.3,
-          });
-          elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
-        }
-
-        const fullBtn = document.getElementById('fullscreen-toggle');
-        const container = document.querySelector('.zoom-container');
-
-        if (fullBtn && container) {
-          fullBtn.addEventListener('click', () => {
-            if (!document.fullscreenElement) {
-              container.requestFullscreen().catch(err => {
-                alert(`Error trying to enable fullscreen mode: ${err.message}`);
-              });
-            } else {
-              document.exitFullscreen();
-            }
-          });
-        }
-      });
-    </script>
-
   </div>
 
   <footer>
     <p>© {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
   </footer>
+
+    <!-- Panzoom library for zoom and pan -->
+  <script src="https://cdn.jsdelivr.net/npm/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const elem = document.querySelector('.zoom-map');
+      if (elem) {
+        const panzoom = Panzoom(elem, {
+          contain: 'outside',
+          maxScale: 5,
+          minScale: 1,
+          step: 0.3,
+        });
+        elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+      }
+
+      const fullBtn = document.getElementById('fullscreen-toggle');
+      const container = document.querySelector('.zoom-container');
+
+      if (fullBtn && container) {
+        fullBtn.addEventListener('click', () => {
+          if (!document.fullscreenElement) {
+            container.requestFullscreen().catch(err => {
+              alert(`Error trying to enable fullscreen mode: ${err.message}`);
+            });
+          } else {
+            document.exitFullscreen();
+          }
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
