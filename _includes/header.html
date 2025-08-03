@@ -3,5 +3,8 @@
     <a href="{{ "/" | relative_url }}" class="site-title">
       <img src="{{ "/assets/images/markcraft_logo.png" | relative_url }}" alt="{{ site.title }}" style="height: 50px;">
     </a>
+    {% if site.description %}
+    <p class="site-description">{{ site.description }}</p>
+    {% endif %}
   </div>
 </header>
