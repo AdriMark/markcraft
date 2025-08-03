@@ -157,7 +157,7 @@ footer {
 .fullscreen-button {
   display: inline-block;
   margin-bottom: 10px;
-  background-color: #7763e7;
+  background-color: #cc9900;
   color: white;
   padding: 6px 12px;
   border: none;
@@ -168,7 +168,7 @@ footer {
 }
 
 .fullscreen-button:hover {
-  background-color: #5c4bb8;
+  background-color: #cc9900;
 }
 
 .zoom-container {
@@ -176,7 +176,7 @@ footer {
   height: 80vh; /* or adjust height as you like */
   overflow: hidden;
   position: relative;
-  border: 2px solid #7763e7;
+  border: 2px solid #cc9900;
   border-radius: 8px;
 }
 
