@@ -147,6 +147,7 @@ a.button, button {
 
 a.button:hover, button:hover {
   transform: scale(1.08);
+  color: #e0e6f8;
   box-shadow: 0 0 12px rgba(255, 204, 0, 0.8);
 }
 

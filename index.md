@@ -5,8 +5,7 @@ title: Home
 
 # About MarkCraft
 
-MarkCraft is a long term Minecraft Bedrock SMP. It has been up for 3 years and more to come! We focus heavily on dedicated players within the community and are always looking for new members.
-
+Markcraft is a long term Minecraft Bedrock SMP that has been up for 3 years! We focus on dedicated players within the community and **never** reset our world. Although we are currently focused on content creators, everybody may apply and be considered for the server.
 [Apply Now](https://forms.gle/f9vg8Gy7FTozSfuH6)
 
 ---
