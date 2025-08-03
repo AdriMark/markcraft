@@ -153,3 +153,23 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: auto;
 }
+
+.zoom-container {
+  overflow: auto;
+  border: 2px solid #ffffff30;
+  padding: 1rem;
+  background: #111;
+  max-height: 80vh;
+}
+
+.zoom-map {
+  width: 100%;
+  max-width: 2000px;
+  transition: transform 0.2s ease;
+  cursor: zoom-in;
+}
+
+.zoom-map:active {
+  transform: scale(2);
+  cursor: zoom-out;
+}
