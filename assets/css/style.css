@@ -27,7 +27,7 @@ header {
 }
 
 header img {
-  max-width: 160px;
+  max-width: 300px;  /* increased size */
   height: auto;
 }
 
@@ -44,6 +44,9 @@ header img {
   margin: 0 auto;
   padding: 2rem 1rem;
   flex: 1;
+  background: linear-gradient(to bottom, #1c3f78, #264e9f); /* dark blue gradient */
+  border-radius: 8px;
+  color: white;
 }
 
 /* Sidebar */
@@ -51,19 +54,20 @@ header img {
   width: 220px;
   padding-right: 2rem;
   border-right: 2px solid #bbb;
+  background-color: #2a57b3; /* slightly lighter blue */
 }
 
 .sidebar a {
   display: block;
   margin-bottom: 1rem;
-  color: #003366;
+  color: #e0e6f8; /* lighter for contrast */
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .sidebar a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 102, 204, 0.4);
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.6);
   text-decoration: underline;
 }
 
@@ -71,21 +75,31 @@ header img {
 main {
   flex: 1;
   padding-left: 2rem;
+  background-color: transparent;
+  color: white;
 }
 
 main h1 {
   margin-bottom: 1rem;
 }
 
+main hr {
+  border: none;
+  border-top: 3px solid #ffcc00; /* golden thick line */
+  margin-top: 3rem;   /* more space above */
+  margin-bottom: 3rem; /* more space below */
+}
+
+
 main a {
-  color: #0055aa;
+  color: #a3c1f7;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 main a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 8px rgba(0, 85, 170, 0.3);
+  box-shadow: 0 0 8px rgba(0, 85, 170, 0.5);
   text-decoration: underline;
 }
 
@@ -107,7 +121,7 @@ a.button, button {
 
 a.button:hover, button:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 12px rgba(255, 204, 0, 0.6);
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.8);
 }
 
 /* Footer (optional) */
