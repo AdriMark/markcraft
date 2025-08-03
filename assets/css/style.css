@@ -10,19 +10,22 @@
 
 body {
   font-family: 'Bungee', sans-serif;
-  background-color: #d3dbe6; /* blue-grey */
+  background-color: #1c3f78; /* dark blue */
   color: #222;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  /* Add horizontal padding so sidebar isn't flush left */
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /* Header */
 header {
   text-align: center;
   padding: 2rem 1rem 1.5rem;
-  background: linear-gradient(to bottom, #3a9bdc, #1c3f78, #d3dbe6); /* blue to dark blue to blue-grey */
+  background: linear-gradient(to bottom, #3a9bdc, #1c3f78, #1c3f78);
   color: white;
 }
 
@@ -41,12 +44,13 @@ header img {
 .page-container {
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  margin: 0 auto; /* center container horizontally */
+  padding: 2rem 0; /* vertical padding only */
   flex: 1;
-  background: linear-gradient(to bottom, #1c3f78, #264e9f); /* dark blue gradient */
-  border-radius: 8px;
+  background: transparent;
+  border-radius: 0;
   color: white;
+  position: relative; /* for possible positioning */
 }
 
 /* Sidebar */
@@ -54,13 +58,15 @@ header img {
   width: 220px;
   padding-right: 2rem;
   border-right: 2px solid #bbb;
-  background-color: #2a57b3; /* slightly lighter blue */
+  background-color: transparent;
+  /* Pull sidebar slightly left, outside page-container's center */
+  margin-left: -2rem;
 }
 
 .sidebar a {
   display: block;
   margin-bottom: 1rem;
-  color: #e0e6f8; /* lighter for contrast */
+  color: #e0e6f8;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -74,6 +80,8 @@ header img {
 /* Main Content */
 main {
   flex: 1;
+  max-width: calc(100% - 220px); /* leave space for sidebar */
+  margin: 0 auto; /* center main content within remaining space */
   padding-left: 2rem;
   background-color: transparent;
   color: white;
@@ -85,11 +93,10 @@ main h1 {
 
 main hr {
   border: none;
-  border-top: 3px solid #ffcc00; /* golden thick line */
-  margin-top: 3rem;   /* more space above */
-  margin-bottom: 3rem; /* more space below */
+  border-top: 3px solid #ffcc00;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
 
 main a {
   color: #a3c1f7;
@@ -103,12 +110,12 @@ main a:hover {
   text-decoration: underline;
 }
 
-/* Buttons (styled as links or actual <button>) */
+/* Buttons */
 a.button, button {
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
-  background-color: #ffcc00; /* golden yellow */
+  background-color: #ffcc00;
   color: #000;
   border: none;
   border-radius: 6px;
@@ -124,7 +131,7 @@ a.button:hover, button:hover {
   box-shadow: 0 0 12px rgba(255, 204, 0, 0.8);
 }
 
-/* Footer (optional) */
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
