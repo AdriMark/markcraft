@@ -7,7 +7,7 @@ title: Home
 
 MarkCraft is a long term Minecraft Bedrock SMP. It has been up for 3 years and more to come! We focus heavily on dedicated players within the community and are always looking for new members.
 
-[Apply Now](/apply)
+[Apply Now](https://forms.gle/f9vg8Gy7FTozSfuH6)
 
 ---
 
