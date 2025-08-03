@@ -51,16 +51,21 @@ header img {
   border-radius: 0;
   color: white;
   position: relative; /* for possible positioning */
+  min-height: 100%; /* ensure full height */
 }
 
 /* Sidebar */
 .sidebar {
   width: 220px;
   padding-right: 2rem;
-  border-right: 2px solid #bbb;
+  border-right: 2px solid #bbb; /* keep original white/grey border */
   background-color: transparent;
   /* Pull sidebar slightly left, outside page-container's center */
   margin-left: -2rem;
+  display: flex;
+  flex-direction: column;
+  /* Ensure full height to stretch border */
+  min-height: 100%;
 }
 
 .sidebar a {
@@ -77,6 +82,11 @@ header img {
   text-decoration: underline;
 }
 
+/* Make the Apply Now button text white */
+.sidebar a.button {
+  color: white;
+}
+
 /* Main Content */
 main {
   flex: 1;
@@ -85,19 +95,23 @@ main {
   padding-left: 2rem;
   background-color: transparent;
   color: white;
+  position: relative; /* to allow connection line */
 }
 
-main h1 {
-  margin-bottom: 1rem;
-}
-
+/* Golden horizontal line inside main (the existing hr) */
 main hr {
   border: none;
   border-top: 3px solid #ffcc00;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  position: relative;
+  /* Extend line to visually "connect" to sidebar line */
+  max-width: calc(100% + 220px); /* extend line left by sidebar width */
+  margin-left: -220px; /* pull left to meet sidebar */
+  box-sizing: content-box;
 }
 
+/* Links inside main */
 main a {
   color: #a3c1f7;
   text-decoration: none;
