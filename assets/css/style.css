@@ -8,11 +8,6 @@
   padding: 0;
 }
 
-/* Ensure full height for body and html for flex to work */
-html, body {
-  height: 100%;
-}
-
 body {
   font-family: 'Bungee', sans-serif;
   background: linear-gradient(to bottom, #3a9bdc, #1c3f78, #1c3f78);
@@ -30,8 +25,6 @@ header {
   text-align: center;
   padding: 2rem 1rem 1.5rem;
   color: white;
-  position: relative; /* Keep stacking context for z-index */
-  z-index: 2;
 }
 
 header img {
@@ -54,7 +47,7 @@ header img {
   margin-bottom: 2rem;
   position: relative;
   left: calc(-1 * (100vw - 100%) / 2); /* force full width, even inside body padding */
-  z-index: 3; /* Above everything */
+  z-index: 1;
 }
 
 /* Layout */
@@ -68,8 +61,7 @@ header img {
   border-radius: 0;
   color: white;
   position: relative;
-  align-items: stretch; /* sidebar fills height */
-  min-height: 0; /* reset if needed */
+  align-items: stretch;
 }
 
 /* Sidebar */
@@ -81,11 +73,9 @@ header img {
   margin-left: -2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* stretch full height */
-  min-height: 100%; /* ensures full height */
+  justify-content: stretch;
 }
 
-/* Sidebar links */
 .sidebar a {
   display: block;
   margin-bottom: 1rem;
@@ -162,6 +152,4 @@ footer {
   color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: auto;
-  position: relative; /* for stacking */
-  z-index: 2;
 }
