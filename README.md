@@ -1,2 +1,3 @@
 # markcraft
-Github Pages website for Markcraft.org
+Github Pages website for Markcraft.org!
+I really have no clue what im doing here
