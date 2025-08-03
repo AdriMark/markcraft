@@ -43,7 +43,7 @@ header img {
   color: #f3f3f3;
 }
 
-/* Golden line below header (full-width) */
+/* Golden line below header */
 .header-separator {
   border: none;
   border-top: 3px solid #ffcc00;
@@ -86,12 +86,13 @@ header img {
   margin-bottom: 1rem;
   color: #e0e6f8;
   text-decoration: none;
+  font-family: 'Bungee', cursive;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .sidebar a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 102, 204, 0.6);
+  color: #ffcc00;
   text-decoration: underline;
 }
 
@@ -178,7 +179,7 @@ footer {
 
 .zoom-container {
   width: 100%;
-  height: 80vh; /* or adjust height as you like */
+  height: 80vh;
   overflow: hidden;
   position: relative;
   border: 2px solid #cc9900;
