@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+</head>
+<body>
+  <header>
+    <img src="{{ '/assets/images/markcraft_logo.png' | relative_url }}" alt="{{ site.title }} logo" />
+    <div class="subtitle">The Second Best Bedrock Server</div>
+  </header>
+
+  <div class="page-container">
+    <aside class="sidebar">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/map' | relative_url }}">Map</a>
+      <a href="{{ '/players' | relative_url }}">Players</a>
+      <a href="{{ '/addons' | relative_url }}">Addons</a>
+      <a href="{{ '/apply' | relative_url }}" class="button">Apply Now</a>
+    </aside>
+
+    <main>
+      {{ content }}
+    </main>
+  </div>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+  </footer>
+</body>
+</html>

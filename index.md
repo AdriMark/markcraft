@@ -3,12 +3,16 @@ layout: default
 title: Home
 ---
 
-# Welcome to MarkCraft!
+# About MarkCraft
 
-MarkCraft is a Minecraft Bedrock SMP run by SMT AdriMark and Mark.
+MarkCraft is a long term Minecraft Bedrock SMP. It has been up for 3 years and more to come! We focus heavily on dedicated players within the community and are always looking for new members.
 
-Apply today and become one of the best!
+[Apply Now](/apply)
 
-(Test Content)
 ---
 
+## What Now?
+
+- [Check out our map](/map)
+- [About our players](/players)
+- [Our Bedrock Addons and support](/addons)

@@ -1,0 +1,121 @@
+/* Import Bungee font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bungee', sans-serif;
+  background-color: #d3dbe6; /* blue-grey */
+  color: #222;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  background: linear-gradient(to bottom, #3a9bdc, #1c3f78, #d3dbe6); /* blue to dark blue to blue-grey */
+  color: white;
+}
+
+header img {
+  max-width: 160px;
+  height: auto;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #f3f3f3;
+}
+
+/* Layout */
+.page-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  padding-right: 2rem;
+  border-right: 2px solid #bbb;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 1rem;
+  color: #003366;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.4);
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+}
+
+main a {
+  color: #0055aa;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 85, 170, 0.3);
+  text-decoration: underline;
+}
+
+/* Buttons (styled as links or actual <button>) */
+a.button, button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #ffcc00; /* golden yellow */
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.button:hover, button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.6);
+}
+
+/* Footer (optional) */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  margin-top: auto;
+}
