@@ -10,13 +10,12 @@
 
 body {
   font-family: 'Bungee', sans-serif;
-  background: linear-gradient(to bottom, #3a9bdc, #1c3f78, #1c3f78); /* gradient moved here */
+  background: linear-gradient(to bottom, #3a9bdc, #1c3f78, #1c3f78);
   color: #222;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* Add horizontal padding so sidebar isn't flush left */
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -26,11 +25,10 @@ header {
   text-align: center;
   padding: 2rem 1rem 1.5rem;
   color: white;
-  /* Removed background gradient */
 }
 
 header img {
-  max-width: 600px;  /* doubled size */
+  max-width: 600px;
   height: auto;
 }
 
@@ -40,32 +38,38 @@ header img {
   color: #f3f3f3;
 }
 
+/* Golden line below header */
+.header-separator {
+  border: none;
+  border-top: 3px solid #ffcc00;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+}
+
 /* Layout */
 .page-container {
   display: flex;
   max-width: 1200px;
-  margin: 0 auto; /* center container horizontally */
-  padding: 2rem 0; /* vertical padding only */
+  margin: 0 auto;
+  padding: 2rem 0;
   flex: 1;
   background: transparent;
   border-radius: 0;
   color: white;
-  position: relative; /* for possible positioning */
-  min-height: 100%; /* ensure full height */
+  position: relative;
+  align-items: stretch; /* makes sidebar fill height */
 }
 
 /* Sidebar */
 .sidebar {
   width: 220px;
   padding-right: 2rem;
-  border-right: 2px solid #bbb; /* keep original white/grey border */
+  border-right: 2px solid white; /* extend white line and make it bright */
   background-color: transparent;
-  /* Pull sidebar slightly left, outside page-container's center */
   margin-left: -2rem;
   display: flex;
   flex-direction: column;
-  /* Ensure full height to stretch border */
-  min-height: 100%;
+  justify-content: stretch;
 }
 
 .sidebar a {
@@ -82,36 +86,27 @@ header img {
   text-decoration: underline;
 }
 
-/* Make the Apply Now button text white */
-.sidebar a.button {
-  color: white;
-}
-
 /* Main Content */
 main {
   flex: 1;
-  max-width: calc(100% - 220px); /* leave space for sidebar */
-  margin: 0 auto; /* center main content within remaining space */
+  max-width: calc(100% - 220px);
+  margin: 0 auto;
   padding-left: 2rem;
   background-color: transparent;
   color: white;
-  position: relative; /* to allow connection line */
 }
 
-/* Golden horizontal line inside main (the existing hr) */
+main h1 {
+  margin-bottom: 1rem;
+}
+
 main hr {
   border: none;
   border-top: 3px solid #ffcc00;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  position: relative;
-  /* Extend line to visually "connect" to sidebar line */
-  max-width: calc(100% + 220px); /* extend line left by sidebar width */
-  margin-left: -220px; /* pull left to meet sidebar */
-  box-sizing: content-box;
 }
 
-/* Links inside main */
 main a {
   color: #a3c1f7;
   text-decoration: none;
