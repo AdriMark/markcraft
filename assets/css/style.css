@@ -334,26 +334,24 @@ footer {
   }
 
   .menu-toggle {
-    all: unset;
     position: absolute;
     top: 2rem;
     right: 1rem;
+    display: block;       /* Keep this */
     font-size: 2rem;
     color: white;
     cursor: pointer;
     z-index: 900;
 
+    background: none;
+    border: none;
     padding: 0;
     margin: 0;
-    width: auto;
-    height: auto;
+    outline: none;
+    box-shadow: none;
     line-height: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     user-select: none;
   }
-
 
   .menu-toggle:hover,
   .menu-toggle:focus {
@@ -418,6 +416,7 @@ footer {
     user-select: none;
   }
 
+  .close-sidebar:hover,
   .close-sidebar:focus {
     outline: none;
     box-shadow: none;
