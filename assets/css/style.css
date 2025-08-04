@@ -48,7 +48,6 @@ header img {
   text-align: center;
 }
 
-/* Container for header content */
 .header-inner {
   display: flex;
   flex-direction: column;
@@ -182,7 +181,7 @@ footer {
 }
 
 .zoom-container {
-  width: 100%;
+  aspect-ratio: 1 / 1; /* makes width = height */
   height: 80vh;
   overflow: hidden;
   position: relative;
