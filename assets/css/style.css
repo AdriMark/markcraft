@@ -196,6 +196,7 @@ footer {
   object-fit: contain;
   cursor: grab;
   user-select: none;
+  display: block;
 }
 
 /* Players Page Styles */
