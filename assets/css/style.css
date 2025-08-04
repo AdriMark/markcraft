@@ -324,10 +324,10 @@ footer {
   .hamburger {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
     z-index: 1100;
   }
-  
+
   .menu-toggle {
     display: block;
     position: absolute;
@@ -381,7 +381,11 @@ footer {
   }
   .zoom-container {
   height: 40vh;
+  }
 
-}
-  
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh; 
+  }
+    
 }
