@@ -289,11 +289,6 @@ footer {
 
 /*mobile and small screens */
 
-.no-scroll {
-  overflow: hidden;
-  height: 100vh; 
-}
-
 @media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
@@ -329,8 +324,8 @@ footer {
 
   .hamburger {
     position: absolute;
-    top: 1rem;
-    right: 2rem;
+    top: 1.2rem;
+    right: 3.5rem;
     z-index: 1100;
   }
 
