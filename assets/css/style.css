@@ -288,6 +288,12 @@ footer {
 
 
 /*mobile and small screens */
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; 
+}
+
 @media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
@@ -381,11 +387,6 @@ footer {
   }
   .zoom-container {
   height: 40vh;
-  }
-
-  .no-scroll {
-    overflow: hidden;
-    height: 100vh; 
   }
     
 }
