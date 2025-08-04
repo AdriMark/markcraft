@@ -58,9 +58,10 @@ header img {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .header-inner {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.3rem; /* space between logo and subtitle */
   }
 
   header img {
@@ -70,15 +71,15 @@ header img {
   }
 
   .subtitle {
-    margin: 0 1rem;
-    font-size: 1rem;
-    white-space: nowrap;
+    margin: 0;
+    font-size: 1.1rem;
+    white-space: normal; /* allow wrapping */
   }
 
 .menu-toggle {
   position: fixed;    /* Changed from absolute to fixed */
   top: 1.5rem;
-  left: 1.5rem;
+  right: 1.5rem;
   font-size: 2rem;
   background: none;
   border: none;
