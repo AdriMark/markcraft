@@ -321,6 +321,13 @@ footer {
     pointer-events: none; /* prevent dragging */
   }
 
+  .hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100;
+  }
+  
   .menu-toggle {
     display: block;
     position: absolute;
