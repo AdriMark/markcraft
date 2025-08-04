@@ -25,7 +25,7 @@ These players have made a major impact on the server through videos, builds, art
   </div>
   
   <div class="player-card">
-    <a href="/players/adrimark" class="player-link">
+    <a href="/players/ptoppzz" class="player-link">
       <img src="/assets/images/players/ptoppz_face.png" alt="Ptoppzz" class="player-icon" />
       <h3>Ptoppzz</h3>
     </a>
@@ -48,10 +48,8 @@ These players are active community members who contribute to the server with the
   </div>
 
 <div class="player-card">
-    <a href="/players/adrimark" class="player-link">
       <img src="/assets/images/players/moz_face.png" alt="Moz" class="player-icon" />
       <h3>Moz</h3>
-    </a>
     <p>“The Skull God”</p>
   </div>
 </div>
