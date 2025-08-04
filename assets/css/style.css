@@ -271,12 +271,7 @@ footer {
   z-index: 1001;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
   .sidebar {
     position: fixed;
     top: 0;
@@ -294,13 +289,8 @@ footer {
     left: 0;
   }
 
-  /* Optional: hide sidebar in page layout */
-  .page-container {
-    flex-direction: column;
-  }
-
-  main {
-    max-width: 100%;
-    padding-left: 0;
+  .menu-toggle {
+    display: block;
   }
 }
+
