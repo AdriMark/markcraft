@@ -322,7 +322,7 @@ footer {
   }
 
   .menu-toggle {
-    position: absolute;
+    position: relative;
     top: 2rem;
     right: 1rem;
     font-size: 2rem;
