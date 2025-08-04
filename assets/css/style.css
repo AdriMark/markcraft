@@ -258,3 +258,10 @@ footer {
 .player-link:hover h3 {
   text-decoration: underline;  /* Underline name on hover */
 }
+
+.player-link:hover,
+.player-link:focus {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
