@@ -335,10 +335,10 @@ footer {
 
   .menu-toggle {
     position: absolute;
-    top: 3.9rem;
+    top: 3.8rem;
     right: 1rem;
     display: block;     
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     cursor: pointer;
     z-index: 900;
@@ -398,7 +398,7 @@ footer {
   .close-sidebar {
     all: unset;
     position: absolute;
-    top: 3rem;
+    top: 2.5rem;
     right: 1.5rem;
     font-size: 4rem;
     color: white;
