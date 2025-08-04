@@ -334,17 +334,26 @@ footer {
   }
 
   .menu-toggle {
-    display: block;
+    all: unset;
     position: absolute;
     top: 2rem;
     right: 1rem;
     font-size: 2rem;
-    background: none;
-    border: none;
     color: white;
     cursor: pointer;
     z-index: 900;
+
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
   }
+
 
   .menu-toggle:hover,
   .menu-toggle:focus {
@@ -394,20 +403,24 @@ footer {
     top: 3rem;
     right: 1.5rem;
     font-size: 4rem;
-    background: none;
-    border: none;
     color: white;
     cursor: pointer;
     z-index: 1101;
+
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
   }
 
   .close-sidebar:focus {
     outline: none;
     box-shadow: none;
-  }
-
-  .close-sidebar {
-    display: block;
   }
     
 }
