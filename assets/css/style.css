@@ -319,7 +319,7 @@ footer {
 
   .sidebar img {
     display: block;
-    max-width: 220px;  /* size control */
+    max-width: 250px;  /* size control */
     width: 60%;        /* responsive */
     margin: 0 0 2rem 0; /* bottom spacing */
     user-select: none;  /* prevent text selection */
@@ -376,8 +376,8 @@ footer {
   }
 
   header img {
-    width: 90vw;
-    max-width: 500px;
+    width: 80vw;
+    max-width: 300px;
     height: auto;
   }
 
