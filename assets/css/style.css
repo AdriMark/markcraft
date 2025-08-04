@@ -45,6 +45,7 @@ header img {
   font-size: 1.5rem;
   color: #f3f3f3;
   font-family: 'Bungee', cursive;
+  text-align: center;
 }
 
 /* Container for header content */
@@ -281,6 +282,11 @@ footer {
   z-index: 1001;
 }
 
+.sidebar img {
+  display: none;
+}
+
+
 /*mobile and small screens */
 @media (max-width: 768px) {
   html, body {
@@ -306,10 +312,18 @@ footer {
     left: 0;
   }
 
+  .sidebar img {
+    display: block;
+    max-width: 180px;  /* size control */
+    width: 60%;        /* responsive */
+    margin: 0 0 2rem 0; /* bottom spacing */
+    user-select: none;  /* prevent text selection */
+    pointer-events: none; /* prevent dragging */
+  }
+
   .menu-toggle {
     display: block;
-    position: fixed;
-    top: 1.5rem;
+    top: 2rem;
     right: 1.5rem;
     left: auto;
     font-size: 2rem;
@@ -355,15 +369,6 @@ footer {
   header {
     text-align: center;
     padding: 1rem 1rem;
-  }
-
-  .sticky-header {
-    position: fixed;
-    top: 0;
-    background-color: transparent;
-    z-index: 1200;
-    padding: 0.5rem 1rem;
-    backdrop-filter: none;   
   }
   
 }
