@@ -44,6 +44,7 @@ header img {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   color: #f3f3f3;
+  font-family: 'Bungee', cursive;
 }
 
 /* Container for header content */
@@ -357,11 +358,12 @@ footer {
   }
 
   .sticky-header {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: transparent;
     z-index: 1200;
     padding: 0.5rem 1rem;
     backdrop-filter: none;   
   }
+  
 }
