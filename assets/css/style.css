@@ -196,3 +196,63 @@ footer {
   user-select: none;
 }
 
+/* Players Page Styles */
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.player-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.player-card:hover {
+  transform: translateY(-4px);
+}
+
+.player-icon {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 480px) {
+  .players-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .player-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .player-card {
+    padding: 0.75rem;
+  }
+}
+
+.player-link {
+  color: inherit;           /* Keep same color */
+  text-decoration: none;    /* Remove underline */
+  display: inline-block;    /* So padding/margin works */
+  cursor: pointer;
+}
+
+.player-link:hover h3 {
+  text-decoration: underline;  /* Underline name on hover */
+}

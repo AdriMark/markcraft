@@ -15,3 +15,5 @@ Markcraft is a long term Minecraft Bedrock SMP that has been up for 3 years! We 
 - [Check out our map](/map)
 - [About our players](/players)
 - [Our Bedrock Addons and support](/addons)
+
+Keep in mind this website is still a Work-In-Progress!
