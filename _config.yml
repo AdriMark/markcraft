@@ -11,4 +11,4 @@ plugins: []
 collections:
   players:
     output: true
-    permalink: /players/adrimark/
+    permalink: /players/:name/
