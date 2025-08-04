@@ -286,6 +286,10 @@ footer {
   display: none;
 }
 
+.close-sidebar {
+  display: none;
+}
+
 
 /*mobile and small screens */
 
@@ -329,6 +333,11 @@ footer {
     z-index: 1100;
   }
 
+ .hamburger:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .menu-toggle {
     display: block;
     position: absolute;
@@ -339,7 +348,7 @@ footer {
     border: none;
     color: white;
     cursor: pointer;
-    z-index: 1100;
+    z-index: 1000;
   }
 
 
@@ -382,6 +391,27 @@ footer {
   }
   .zoom-container {
   height: 40vh;
+  }
+
+  .close-sidebar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1101;
+  }
+
+  .close-sidebar:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .close-sidebar {
+    display: block;
   }
     
 }

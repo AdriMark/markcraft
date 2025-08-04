@@ -20,6 +20,7 @@
 
   <div class="page-container">
     <aside class="sidebar">
+      <button class="close-sidebar" aria-label="Close menu">&times;</button>
       <img src="{{ '/assets/images/markcraft_logo.png' | relative_url }}" alt="{{ site.title }} logo" />
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/map' | relative_url }}">Map</a>
@@ -72,14 +73,22 @@
     });
   </script>
 
-  <script>
+<script>
   const toggleBtn = document.getElementById('menu-toggle');
   const sidebar = document.querySelector('.sidebar');
+  const closeBtn = document.querySelector('.close-sidebar');
 
   toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('open');
+    document.body.classList.toggle('no-scroll', sidebar.classList.contains('open'));
+  });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    document.body.classList.remove('no-scroll');
   });
 </script>
+
 
 
 
