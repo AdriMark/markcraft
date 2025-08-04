@@ -1,9 +1,9 @@
 ---
 layout: default
-title: AdriMark
+title: SMT Mark
 ---
 
-# Adrimark
+# SMT Mark
 
 This player page hasn't been filled out yet. Check back soon!
-AdriMark is the co-owner of MarkCraft!
+SMT Mark is the owner of MarkCraft! 

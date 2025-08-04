@@ -1,9 +1,9 @@
 ---
 layout: default
-title: AdriMark
+title: Ptoppzz
 ---
 
-# Adrimark
+# Ptoppzz
 
 This player page hasn't been filled out yet. Check back soon!
-AdriMark is the co-owner of MarkCraft!
+Ptoppzz drew all of the art for our server! 
