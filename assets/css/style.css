@@ -322,8 +322,7 @@ footer {
   }
 
   .menu-toggle {
-    position: relative;
-    display: block;
+    position: absolute;
     top: 2rem;
     right: 1rem;
     font-size: 2rem;
@@ -333,6 +332,7 @@ footer {
     cursor: pointer;
     z-index: 1100;
   }
+
 
   .menu-toggle:focus {
     outline: none;
