@@ -46,6 +46,67 @@ header img {
   color: #f3f3f3;
 }
 
+/* Container for header content */
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header img {
+    max-width: 150px; /* smaller logo */
+    height: auto;
+    margin: 0;
+  }
+
+  .subtitle {
+    margin: 0 1rem;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+.menu-toggle {
+  position: fixed;    /* Changed from absolute to fixed */
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;      /* higher than sidebar’s 1000 */
+  display: none;      /* default hidden on desktop */
+}
+
+.menu-toggle:focus {
+  outline: none;      /* Remove default focus outline */
+  box-shadow: none;   /* Remove any box-shadow */
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+  header {
+    text-align: left;
+    padding: 1rem 1rem;
+  }
+}
+
+
 /* Layout */
 .page-container {
   display: flex;
@@ -272,17 +333,22 @@ footer {
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   .sidebar {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -100vw; /* start fully offscreen on left */
     width: 100vw;
     height: 100vh;
-    background-color: #111;
+    background-color: #1c3f78;
     padding: 2rem;
     transition: left 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
+    margin-left: 0; /* reset any negative margin */
   }
 
   .sidebar.open {
@@ -293,4 +359,5 @@ footer {
     display: block;
   }
 }
+
 
