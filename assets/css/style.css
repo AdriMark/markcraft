@@ -294,6 +294,7 @@ footer {
     height: 100vh;
     background-color: #1c3f78;
     padding: 2rem;
+    padding-top: 6rem;
     transition: left 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
@@ -338,14 +339,14 @@ footer {
   }
 
   header img {
-    max-width: 150px;
+    width: 80vw;
+    max-width: 300px;
     height: auto;
-    margin: 0;
   }
 
   .subtitle {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     white-space: normal;
     text-align: center;
   }
@@ -353,5 +354,14 @@ footer {
   header {
     text-align: center;
     padding: 1rem 1rem;
+  }
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 1200;
+    padding: 0.5rem 1rem;
+    backdrop-filter: none;   
   }
 }
