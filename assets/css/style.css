@@ -43,18 +43,6 @@ header img {
   color: #f3f3f3;
 }
 
-/* Golden Line */
-.header-separator {
-  border: none;
-  border-top: 3px solid #ffcc00;
-  width: 100vw;
-  margin: 0;
-  margin-bottom: 2rem;
-  position: relative;
-  left: calc(-1 * (100vw - 100%) / 2); 
-  z-index: 1;
-}
-
 /* Layout */
 .page-container {
   display: flex;
