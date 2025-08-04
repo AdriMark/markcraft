@@ -333,11 +333,6 @@ footer {
     z-index: 900;
   }
 
- .hamburger:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
   .menu-toggle {
     display: block;
     position: absolute;
@@ -351,7 +346,7 @@ footer {
     z-index: 900;
   }
 
-
+  .menu-toggle:hover,
   .menu-toggle:focus {
     outline: none;
     box-shadow: none;
@@ -396,9 +391,9 @@ footer {
   .close-sidebar {
     all: unset;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
+    top: 3rem;
+    right: 1.5rem;
+    font-size: 4rem;
     background: none;
     border: none;
     color: white;
