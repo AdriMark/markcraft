@@ -233,6 +233,22 @@ footer {
   padding-top: 1rem;
 }
 
+.build-gallery img {
+  border: 2px solid white;    
+  border-radius: 6px;          
+  padding: 2px;                
+  box-sizing: border-box;       
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.build-gallery img:hover {
+  border-color: #e0e6f8;         
+  box-shadow: 0 0 10px #d4a700; 
+  transform: scale(1.05);   
+}
+
+
 /* Small screens: 1 column */
 @media (max-width: 480px) {
   .players-grid {
@@ -308,6 +324,22 @@ footer {
 .build-gallery img:hover {
   transform: scale(1.05);
 }
+
+:fullscreen img {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: contain;
+  background: black;
+}
+
+:-webkit-full-screen img {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: contain;
+  background: black;
+}
+
+
 
 
 /*mobile and small screens */
