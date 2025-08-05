@@ -66,7 +66,7 @@ These players are active community members who contribute to the server with the
 
 # Former Players
 
-While some of our players move on to new things, the world never resets. Their creations can still be found spread throughout the server.
+While some of our players move on to new things, the world never resets. Their creations and memories can still be found spread throughout the server.
 
 <div class="players-grid">
   <div class="player-card">
