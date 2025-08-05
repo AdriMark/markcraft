@@ -70,8 +70,23 @@
           }
         });
       }
+ const galleryImages = document.querySelectorAll('.build-gallery img');
+    galleryImages.forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        if (img.requestFullscreen) {
+          img.requestFullscreen().catch(err => {
+            console.warn(`Error attempting fullscreen: ${err.message}`);
+          });
+        } else if (img.webkitRequestFullscreen) {
+          img.webkitRequestFullscreen();
+        } else if (img.msRequestFullscreen) {
+          img.msRequestFullscreen();
+        }
+      });
     });
-  </script>
+  });
+</script>
 
 <script>
   const toggleBtn = document.getElementById('menu-toggle');

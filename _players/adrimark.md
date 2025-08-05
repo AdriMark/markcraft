@@ -12,10 +12,10 @@ Hi! I’m one of the co-owners of MarkCraft along with SMT Mark. I make Minecraf
 # Builds (placeholders)
 
 <div class="build-gallery">
-  <img src="/assets/images/builds/placeholder.png" alt="Placeholder" />
-  <img src="/assets/images/builds/placeholder.png" alt="Placeholder" />
-  <img src="/assets/images/builds/placeholder.png" alt="Placeholder" />
-  <img src="/assets/images/builds/placeholder.png" alt="Placeholder" />
+  <div class="build-item"><img src="/assets/images/builds/placeholder.png" alt="Placeholder" /></div>
+  <div class="build-item"><img src="/assets/images/builds/placeholder.png" alt="Placeholder" /></div>
+  <div class="build-item"><img src="/assets/images/builds/placeholder.png" alt="Placeholder" /></div>
+  <div class="build-item"><img src="/assets/images/builds/placeholder.png" alt="Placeholder" /></div>
 </div>
 
 ---
