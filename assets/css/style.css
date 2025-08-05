@@ -319,11 +319,11 @@ footer {
 
   .sidebar img {
     display: block;
-    max-width: 300px;  /* size control */
-    width: 80%;        /* responsive */
-    margin: 0 0 1.8rem 0; /* bottom spacing */
-    user-select: none;  /* prevent text selection */
-    pointer-events: none; /* prevent dragging */
+    max-width: 300px; 
+    width: 80%;      
+    margin: 0.15rem 0 1.8rem 0;
+    user-select: none; 
+    pointer-events: none; 
   }
 
   .hamburger {
