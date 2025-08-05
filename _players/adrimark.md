@@ -9,7 +9,7 @@ Hi! I’m one of the co-owners of MarkCraft along with SMT Mark. I make Minecraf
 
 ---
 
-# Builds (placeholders)
+# Builds
 
 <div class="build-gallery">
   <div class="build-item"><img src="/assets/images/builds/docks.webp" alt="A warmly lighted dock area built on a deepslate base, with spruce buildings, and blue warped wood for the roof. The center building is a tavern with a large mug sign on the front." /></div>
