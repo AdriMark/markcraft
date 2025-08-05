@@ -288,19 +288,23 @@ footer {
 .build-gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
-  justify-content: center;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .build-gallery img {
-  flex: 0 1 calc(33.333% - 1rem);
+  width: calc(33.333% - 0.667rem); 
   height: auto;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  max-width: 100%;
   box-sizing: border-box;
 }
+
 
 .build-gallery img:hover {
   transform: scale(1.05);
