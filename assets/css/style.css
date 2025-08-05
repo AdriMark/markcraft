@@ -451,5 +451,9 @@ footer {
     outline: none;
     box-shadow: none;
   }
+
+  .build-gallery img {
+    max-width: 200px;
+  }
     
 }
