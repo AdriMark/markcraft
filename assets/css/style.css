@@ -290,6 +290,25 @@ footer {
   display: none;
 }
 
+.build-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.build-gallery img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.build-gallery img:hover {
+  transform: scale(1.05);
+}
+
 
 /*mobile and small screens */
 
