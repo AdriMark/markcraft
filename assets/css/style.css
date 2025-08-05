@@ -298,7 +298,7 @@ footer {
 }
 
 .build-gallery img {
-  max-width: 200px;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
   cursor: pointer;
