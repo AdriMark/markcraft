@@ -13,7 +13,7 @@ These players have made a major impact on the server through videos, builds, art
       <img src="/assets/images/players/adrimark_face.png" alt="AdriMark" class="player-icon" />
       <h3>AdriMark</h3>
     </a>
-    <p>“Trying To Be The Best”</p>
+    <p>“You've seen me around”</p>
   </div>
 
   <div class="player-card">

@@ -293,11 +293,13 @@ footer {
 }
 
 .build-gallery img {
-  max-width: 400px;
+  flex: 0 1 calc(33.333% - 1rem);
   height: auto;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .build-gallery img:hover {
@@ -450,6 +452,10 @@ footer {
   .close-sidebar:focus {
     outline: none;
     box-shadow: none;
+  }
+
+  .build-gallery img {
+    flex: 0 1 100%; 
   }
     
 }
