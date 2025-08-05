@@ -31,6 +31,14 @@ These players have made a major impact on the server through videos, builds, art
     </a>
     <p>“:3”</p>
   </div>
+
+  <div class="player-card">
+    <a href="/players/potatoliquids" class="player-link">
+      <img src="/assets/images/players/potato_face.webp" alt="PotatoLiquids" class="player-icon" />
+      <h3>PotatoLiquids</h3>
+    </a>
+    <p>"boh'oh ov woh'ah"</p>
+  </div>
 </div>
 
 

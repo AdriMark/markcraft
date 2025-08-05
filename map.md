@@ -14,9 +14,11 @@ Explore Markcraft with this 2000x2000 block interactive map! Why so small? We ta
   <img src="/assets/images/markcraft_map.webp" alt="An image of the MarkCraft world map. The map shows all the different biomes around the world spawn, aswell as the very colorful town itself. Zooming in reveals all the seperate roads and building in the town." class="zoom-map" />
 </div>
 
+---
+
 # In-game Screenshots
 
-Below are some screenshots taken of the world! You can find even more by checking out player's personal build pages.\ 
+Below are some screenshots taken of the world! You can find even more by checking out player's personal build pages.
 These pictures were taken on a Java port of the world, using Complementary shaders.
 
 <div class="build-gallery">
