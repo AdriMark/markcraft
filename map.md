@@ -26,5 +26,6 @@ These pictures were taken on a Java port of the world, using Complementary shade
   <div class="build-item"><img src="/assets/images/builds/widepan2.webp" alt="A zoomed out image of the entire Silly City of MarkCraft" /></div>
   <div class="build-item"><img src="/assets/images/builds/widepan3.webp" alt="A zoomed out image of the entire Silly City of MarkCraft" /></div>
   <div class="build-item"><img src="/assets/images/builds/docks.webp" alt="A warmly lighted dock area built on a deepslate base, with spruce buildings, and blue warped wood for the roof. The center building is a tavern with a large mug sign on the front." /></div>
+  <div class="build-item"><img src="/assets/images/builds/pigeh.webp" alt="A nightime shot that shows a zombie pigman statue holding up a blue flag with a yellow fairy in the center. The background shows multiple buildings and behind them five evenly spaced beacons shine into the sky, with the moon in the middle." /></div>
   <div class="build-item"><img src="/assets/images/builds/end_bridge.webp" alt="Many endermen stand ontop of a white bridge that floats above the purple glowing void. On the bridge are arches that glow white and repeat every few blocks. In the distance, the outline of an end island can be seen, but the details cannot be made out." /></div>
 </div>
