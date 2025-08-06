@@ -60,6 +60,12 @@ These players are active community members who contribute to the server with the
       <h3>Moz</h3>
     <p>“The Skull God”</p>
   </div>
+
+<div class="player-card">
+      <img src="/assets/images/players/funm_face.webp" alt="Funm" class="player-icon" />
+      <h3>FunM123</h3>
+    <p>“I don't know what I'm doing here”</p>
+  </div>
 </div>
 
 ---
