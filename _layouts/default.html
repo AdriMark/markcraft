@@ -26,6 +26,7 @@
       <a href="{{ '/map' | relative_url }}">Map</a>
       <a href="{{ '/players' | relative_url }}">Players</a>
       <a href="{{ '/addons' | relative_url }}">Addons</a>
+      <a href="https://discord.com/invite/XdpQ7KwQ8x">Discord</a>
       <a href="https://forms.gle/f9vg8Gy7FTozSfuH6" class="button" target="_blank" rel="noopener noreferrer">Apply Now</a>
     </aside>
 
@@ -104,7 +105,13 @@
   });
 </script>
 
-
+<script>
+  document.querySelectorAll('.toggle-title').forEach(title => {
+    title.addEventListener('click', () => {
+      title.parentElement.classList.toggle('active');
+    });
+  });
+</script>
 
 
 </body>

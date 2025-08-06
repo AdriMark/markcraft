@@ -319,6 +319,63 @@ footer {
   background: black;
 }
 
+.toggle-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-title {
+  position: relative;
+  padding: 1rem 1.25rem 1rem 2.5rem;
+  background-color: #1c3f78;
+  color: white;
+  font-family: 'Bungee', cursive;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 2px solid #ffcc00;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-title:hover {
+  background-color: #2b4f90;
+}
+
+.toggle-title::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid white;
+  transition: transform 0.3s ease;
+}
+
+.toggle-section.active .toggle-title::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.toggle-content {
+  display: none;
+  padding: 1rem 1.25rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.toggle-section.active .toggle-content {
+  display: block;
+}
+
 
 
 
