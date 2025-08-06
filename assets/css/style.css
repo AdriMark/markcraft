@@ -324,6 +324,7 @@ footer {
   border: 1px solid white;
   border-radius: 12px;
   margin-bottom: 1.5rem;
+  padding-top: 0.7rem;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
