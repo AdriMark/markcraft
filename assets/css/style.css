@@ -290,6 +290,7 @@ footer {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: left;
+  padding-top: 1rem;
 }
 
 .build-gallery img {
