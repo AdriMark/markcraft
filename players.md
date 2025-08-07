@@ -72,6 +72,12 @@ These players are active community members who contribute to the server with the
       <h3>DayDxeam</h3>
     <p>“I exist, somehow”</p>
   </div>
+
+<div class="player-card">
+      <img src="/assets/images/players/hgzt_face.webp" alt="HGZT_03" class="player-icon" />
+      <h3>HGZT_03</h3>
+    <p>“I don't know who I am, or why I'm here. All I know, is I must Skibidi”</p>
+  </div>
 </div>
 
 ---
