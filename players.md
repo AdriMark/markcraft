@@ -66,6 +66,12 @@ These players are active community members who contribute to the server with the
       <h3>FunM123</h3>
     <p>“I don't know what I'm doing here”</p>
   </div>
+
+<div class="player-card">
+      <img src="/assets/images/players/daydream_face.webp" alt="DayDxeam" class="player-icon" />
+      <h3>DayDxeam</h3>
+    <p>“I exist, somehow”</p>
+  </div>
 </div>
 
 ---
