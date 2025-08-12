@@ -313,7 +313,7 @@ footer {
 }
 
 .addon-gallery img {
-  width: 100%; 
+  width: 80%; 
   max-width: 600px; 
   height: auto;
   border-radius: 8px;
