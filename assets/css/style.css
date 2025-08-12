@@ -305,6 +305,32 @@ footer {
   transform: scale(1.05);
 }
 
+.addon-gallery {
+  display: flex;
+  flex-direction: column; 
+  gap: 1.5rem; 
+  padding-top: 0.7rem;
+}
+
+.addon-gallery img {
+  width: 100%; 
+  max-width: 800px; 
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.addon-gallery img:hover {
+  transform: scale(1.02);
+}
+
+.addon-gallery p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
 :fullscreen img {
   width: 100vw !important;
   height: 100vh !important;
