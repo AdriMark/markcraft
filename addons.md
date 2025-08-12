@@ -42,7 +42,8 @@ Coming Soon!
   <div class="toggle-content">
     <div class="addon-gallery">
       <div class="addon-item">
-      <img src="/assets/images/addons/addon1.webp" alt="Addon description" />
+      <a href="https://mcpedl.com/quiet-tridents/">
+      <img src="/assets/images/addons/quiet_tridents_large_icon.webp" alt="Two tridents are shown against a brick wall with the text Quiet Tridents written above them. There is also a muted sound icon between them." /> </a>
       <p>This pack removes the sound of tridents hitting the ground, and optionally enemies. It is intended for use with trident killer farms. </p>
       </div>
     </div>
