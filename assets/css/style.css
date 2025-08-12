@@ -314,7 +314,7 @@ footer {
 
 .addon-gallery img {
   width: 100%; 
-  max-width: 800px; 
+  max-width: 600px; 
   height: auto;
   border-radius: 8px;
   cursor: pointer;
@@ -329,6 +329,15 @@ footer {
   margin-top: 0.5rem;
   font-size: 1rem;
   line-height: 1.4;
+}
+
+.addon-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.addon-item a:hover h3 {
+  text-decoration: underline;
 }
 
 :fullscreen img {
