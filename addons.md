@@ -44,6 +44,7 @@ Coming Soon!
       <div class="addon-item">
       <img src="/assets/images/addons/addon1.webp" alt="Addon description" />
       <p>This pack removes the sound of tridents hitting the ground, and optionally enemies. It is intended for use with trident killer farms. </p>
+      </div>
     </div>
   </div>
 </div>
